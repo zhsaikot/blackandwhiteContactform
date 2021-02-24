@@ -1,0 +1,299 @@
+    /*----Import part----*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+    /*----CSS part----*/
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background-color: #fff;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    section {
+        margin-top: 100px;
+    }
+    
+    .title {
+        font-family: 'Potta One', cursive;
+        text-decoration: underline;
+    }
+    /*----Header part----*/
+    
+    header {
+        background-color: white;
+        width: 136px;
+        height: 400px;
+        position: fixed;
+    }
+    
+    #main-menu ul {
+        list-style: none;
+        padding-top: 35px;
+    }
+    
+    #main-menu ul li {
+        padding-top: 25px;
+    }
+    
+    #main-menu ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    #main-menu ul li a:hover {
+        color: teal;
+        border-bottom: 2px solid teal;
+    }
+    
+    #main-menu li.active {
+        color: teal;
+        border-bottom: 2px solid teal;
+    }
+    
+    #social {
+        right: 0;
+        background-color: white;
+        width: 136px;
+        height: 400px;
+        position: fixed;
+        margin-top: -344px;
+    }
+    
+    #social ul {
+        list-style: none;
+        padding-top: 79px;
+    }
+    
+    #social ul li a {
+        display: block;
+        color: black;
+        margin-left: 30px;
+        padding-top: 16px;
+        font-size: 1.4rem;
+    }
+    
+    #social ul li a i:hover {
+        cursor: pointer;
+        color: lightblue;
+    }
+    /*----slider part----*/
+    
+    #slider {
+        background-image: url('../images/bg-news-reverse.png');
+    }
+    
+    #slider h1 {
+        font-family: 'Potta One', cursive;
+    }
+    
+    #slider h5 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    #slider img {
+        border: 0px solid white;
+        border-radius: 50%;
+        box-shadow: 0px 0px 30px 6px lightgrey;
+    }
+    
+    #slider img:hover {}
+    
+    #slider .btn {
+        background-color: white;
+        padding: 7px 20px;
+        margin-top: 10px;
+        box-shadow: 0px 0px 5px 5px rgb(212, 203, 203);
+        font-weight: bold;
+    }
+    
+    #slider .btn:hover {
+        color: #7146f3;
+        font-weight: bold;
+    }
+    /*----About part----*/
+    
+    #about .container {
+        font-weight: bold;
+    }
+    
+    #about p {
+        font-weight: bold;
+        word-spacing: 5px;
+    }
+    /*
+    #progress {
+        overflow: hidden;
+    }
+    
+    #progress .col-md-4 {
+        transform: translateY(150px);
+        transition: 0.5s;
+        opacity: 0;
+    }
+    
+    #progress:hover .col-md-4 {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    */
+    /*----Services part----*/
+    
+    #service {}
+    /*----Contact part----*/
+    
+    #contact {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #111;
+    }
+    
+    #contact::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        background-color: white;
+    }
+    
+    #contact .container {
+        position: relative;
+        min-width: 1100px;
+        min-height: 550px;
+        display: flex;
+        z-index: 1000;
+    }
+    
+    #contact .container .contactinfo {
+        position: absolute;
+        top: 40px;
+        width: 350px;
+        height: calc(100% - 80px);
+        background-color: #111;
+        color: white;
+        z-index: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    #contact h2 {
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    #contact .info {
+        position: relative;
+        margin: 20px 0;
+    }
+    
+    #contact .info li {
+        position: relative;
+        list-style: none;
+        display: flex;
+        margin: 20px 0;
+        cursor: pointer;
+        align-items: flex-start;
+    }
+    
+    #contact .info li:hover {
+        opacity: 0.5;
+    }
+    
+    #contact .info li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    #contact .contactForm {
+        position: absolute;
+        padding: 70px 300px;
+        background-color: #fff;
+        margin-left: 150px;
+        width: calc(100%-150px);
+        height: 100%;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    #contact .formBox {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    
+    #contact .formBox .inputBox {
+        position: relative;
+        margin: 0 35px 35px 0;
+    }
+    
+    #contact .formBox .inputBox .w50 {
+        width: 47%;
+    }
+    
+    #contact .formBox .inputBox input,
+    #contact .formBox .inputBox textarea {
+        width: 100%;
+        padding: 5px 5px;
+        resize: none;
+        font-size: 18px;
+        font-weight: 300;
+        border: none;
+        border-bottom: 1px solid #777;
+        outline: none;
+    }
+    
+    #contact .formBox .inputBox textarea {
+        width: 350px;
+    }
+    
+    #contact .formBox .inputBox span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 18px;
+        font-weight: 300;
+        color: #333;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+    
+    #contact .formBox .inputBox input:focus~span,
+    #contact .formBox .inputBox textarea:focus~span,
+    #contact .formBox .inputBox input:valid~span,
+    #contact .formBox .inputBox textarea:valid~span {
+        transform: translateY(-20px);
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    
+    #contact .formBox .inputBox button {
+        position: relative;
+        cursor: pointer;
+        background-color: #111;
+        color: #fff;
+        border: none;
+        max-width: 150px;
+        padding: 10px 15px;
+        transition: 0.4s;
+    }
+    
+    #contact .formBox .inputBox button:hover {
+        transform: scale(0.9);
+    }
+    /*----Footer part----*/
